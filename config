@@ -1,0 +1,5 @@
+docker run -d -p 80:80 -p 443:443 --name web-domain.com\
+        -v /home/user/domain.com/nginx.conf:/etc/nginx/nginx.conf:ro \
+        -v /home/user/domain.com/www:/www:ro \
+        -v //home/user/domain.com/logs:/logs \
+        nginx:latest
